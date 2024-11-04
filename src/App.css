@@ -1,38 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Basic styling for the body element */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: 'Roboto', sans-serif; /* Set font to Roboto */
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Apply a gradient background */
+  background-size: 400% 400%; /* Enables smooth animation */
+  animation: gradientBackground 15s ease infinite; /* Animate the gradient background */
+  height: 100vh; /* Set full viewport height */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Main container for the app */
 .App {
-  text-align: center;
+  padding: 20px; /* Add padding around content */
+  max-width: 1000px; /* Set maximum width */
+  margin: 50px auto; /* Center the container and add vertical spacing */
+  background: #ffffff; /* Set background color */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  text-align: center; /* Center-align text */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for the search container */
+.search-container {
+  display: flex; /* Use flex layout */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center; /* Center-align the items */
+  margin-bottom: 20px; /* Add space below */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styling for the input fields */
+.search-box {
+  flex: 1 1 220px; /* Flexible layout for responsiveness */
+  padding: 12px; /* Add padding inside input */
+  margin: 10px; /* Space around input */
+  border: 1px solid #b0bec5; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 14px; /* Set font size */
+  transition: border-color 0.3s; /* Smooth border color change */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Change border color when input is focused */
+.search-box:focus {
+  border-color: #42a5f5; /* Change to blue when focused */
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling for the button container */
+.button-container {
+  display: flex; /* Flex layout */
+  justify-content: center; /* Center-align the buttons */
+  gap: 15px; /* Space between buttons */
+  margin-top: 15px; /* Add space above */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for the search and clear buttons */
+.search-button, .clear-button {
+  display: inline-flex; /* Inline-flex for alignment */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  gap: 8px; /* Space between icon and text */
+  padding: 10px 25px; /* Padding for the buttons */
+  font-size: 15px; /* Font size for button text */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  background: #42a5f5; /* Blue background */
+  color: white; /* White text color */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Hover effect for buttons */
+.search-button:hover, .clear-button:hover {
+  background-color: #1e88e5; /* Darker blue on hover */
+}
+
+/* Styling for the main heading */
+h1 {
+  font-size: 36px; /* Large font size */
+  font-weight: 700; /* Bold text */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #37474f; /* Dark gray color */
 }

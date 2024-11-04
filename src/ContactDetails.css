@@ -1,0 +1,57 @@
+.contact-popup {
+    /* Styling for the popup container */
+    position: fixed; /* Ensures the popup is fixed on the screen */
+    top: 50%; /* Centers the popup vertically */
+    left: 50%; /* Centers the popup horizontally */
+    transform: translate(-50%, -50%); /* Offsets the top and left positioning for true centering */
+    background-color: #ffffff; /* White background for readability */
+    border: 1px solid #cfd8dc; /* Light border for subtle definition */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Box shadow for depth */
+    padding: 20px; /* Inner padding for content spacing */
+    z-index: 1000; /* High z-index to ensure the popup is on top */
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Maximum width for larger screens */
+    max-height: 80vh; /* Limits the height to avoid overflow */
+    overflow-y: auto; /* Adds scroll if content exceeds height */
+}
+
+.popup-content {
+    position: relative; /* Allows for absolute positioning of child elements */
+}
+
+.close-button {
+    /* Styling for the close button */
+    position: absolute; /* Position the button in the popup */
+    top: 10px; /* Space from the top */
+    right: 10px; /* Space from the right */
+    background-color: #ef5350; /* Red background for emphasis */
+    color: white; /* White text for contrast */
+    border: none; /* No border for cleaner look */
+    padding: 5px 15px; /* Padding for better click area */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size for readability */
+}
+
+.close-button:hover {
+    background-color: #d32f2f; /* Darker red for hover effect */
+}
+
+.details-table {
+    /* Styling for the details table */
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Merged borders for cleaner appearance */
+    margin-top: 10px; /* Space above the table */
+}
+
+.details-table th, .details-table td {
+    border: 1px solid #e0e0e0; /* Light border for definition */
+    padding: 10px; /* Padding for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.details-table th {
+    background-color: #e3f2fd; /* Light blue background for headers */
+    font-weight: bold; /* Bold text for header cells */
+}
